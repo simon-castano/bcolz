@@ -30,6 +30,9 @@ try:
 except:
     cpu_info = {'flags': []}
 
+flags_ = cpu_info["flags"]
+flags_.remove("avx2")
+
 
 class LazyCommandClass(dict):
     """
